@@ -1,10 +1,12 @@
 baseurl         = "/"
 theme           = "casper-two"
-languageCode    = "en-US"
+languageCode    = "ja-jp"
 disqusShortname = ""
 paginate        = 6
-#SectionPagesMenu = "main"
-canonifyurls    = true
+# SectionPagesMenu = "main"
+# canonifyurls    = true
+publishDir = "docs"
+
 
 [params]
   title       = "Hugo Casper Two"
