@@ -1,10 +1,11 @@
-baseurl         = "/"
+baseurl         = "https://yukara-ikemiya.github.io/arayuru-genjitu-blog/"
 theme           = "casper-two"
 languageCode    = "ja-jp"
 disqusShortname = ""
 paginate        = 6
 # SectionPagesMenu = "main"
 # canonifyurls    = true
+relativeURLs = true
 publishDir = "docs"
 
 
