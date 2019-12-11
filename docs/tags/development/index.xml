@@ -13,10 +13,10 @@
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/getting-started-with-hugo/</link>
+      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/samples/hugoisforlovers/</link>
       <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/getting-started-with-hugo/</guid>
+      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/samples/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
@@ -27,10 +27,10 @@ Follow the following steps:
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/hugo-template-primer/</link>
+      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/samples/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/hugo-template-primer/</guid>
+      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/samples/goisforlovers/</guid>
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates.</description>
     </item>

@@ -11,35 +11,35 @@ publishDir = "docs"
 
 
 [params]
-  title       = "Hugo Casper Two"
-  subtitle    = "Port of Casper 2.x for Hugo"
-  copyright   = "© 2018"
+  title       = "あらゆる現実のはなし"
+  subtitle    = "たまに役に立つ雑記帳"
+  copyright   = "© 2019"
 
   cover       = "img/blog-cover.jpg"
   description = "Here is a description of your site."
-  metaDescription = ""
+  metaDescription = "日々の思いつきをまとめた日記・雑記帳"
   googleAnalytics = ""
   customCSS = []
   RSSLink = ""
 
-  twitterName = "faketryghost"
-  fbName = "fakeghost"
-  githubName = "eueung"
-  linkedinName = "eueung"
+  twitterName = "yukara_ikemiya"
+  fbName = ""
+  githubName = "yukara-ikemiya"
+  linkedinName = "yukara-ikemiya-16a6b85a"
   mediumName = ""
 
-  logo = "hugo-logo.png"
-  orgName = "EM"
-  orgWebsite = "https://www.telematika.org"
-  orgDescription = "Here is a description placeholder for your org"
+  logo = ""
+  orgName = "Yukara Ikemiya"
+  orgWebsite = ""
+  orgDescription = "audio software engineer"
 
   showSupport = true
 
-  author = "EM"
+  author = "YUKARA IKEMIYA"
   authorAvatar = "img/ghost-icon.png"
-  authorLocation = "Bandung, ID"
-  authorWebsite = "https://eueung.github.io"
-  authorDescription = "Your description here"
+  authorLocation = "Kanagawa, Japan"
+  authorWebsite = "https://yukara-ikemiya.github.io/arayuru-genjitu-blog/"
+  authorDescription = "audio software engineer"
 
   pageNotFoundTitle = "404 - Page not found"
 
@@ -47,7 +47,7 @@ publishDir = "docs"
   singleViewStyle = "casper"
 
 [permalinks]
-  post = "/post/:slug/"
+  post = "/post/:filename/"
 
 [[menu.main]]
   name = "Home"
@@ -55,18 +55,9 @@ publishDir = "docs"
   weight = 200
 
 [[menu.main]]
-  name = "Go"
-  url = "/tags/golang/"
-  weight = 100
-
-[[menu.main]]
   name = "Categories"
   url = "/categories/"
   weight = 99
 
-[[menu.main]]
-  name = "External"
-  url = "https://google.com/"
-  weight = 95
 
 

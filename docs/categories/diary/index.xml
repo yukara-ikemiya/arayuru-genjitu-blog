@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diary on </title>
+    <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/categories/diary/</link>
+    <description>Recent content in Diary on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 11 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/categories/diary/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ブログのはじまり</title>
+      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191211/</link>
+      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191211/</guid>
+      <description>やうしうな技術者もすなるブログといふものを我もしてみむとてするなり。 目的 はるか昔にはてなブログで技術記事みたいなのを書いた時代もありましたが</description>
+    </item>
+    
+  </channel>
+</rss>
