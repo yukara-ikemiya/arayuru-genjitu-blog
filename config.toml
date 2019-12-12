@@ -60,4 +60,6 @@ publishDir = "docs"
   weight = 99
 
 
+[markup.goldmark.renderer]
+  unsafe = true
 
