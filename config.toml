@@ -19,7 +19,7 @@ publishDir = "docs"
   description = "Here is a description of your site."
   metaDescription = "日々の思いつきをまとめた日記・雑記帳"
   googleAnalytics = ""
-  customCSS = []
+  customCSS = ["css/jp-font.css"]
   RSSLink = ""
 
   twitterName = "yukara_ikemiya"
