@@ -36,7 +36,7 @@ publishDir = "docs"
   showSupport = true
 
   author = "YUKARA IKEMIYA"
-  authorAvatar = "img/ghost-icon.png"
+  authorAvatar = "img/yukara_profile.jpg"
   authorLocation = "Kanagawa, Japan"
   authorWebsite = "https://yukara-ikemiya.github.io/arayuru-genjitu-blog/"
   authorDescription = "audio software engineer"
