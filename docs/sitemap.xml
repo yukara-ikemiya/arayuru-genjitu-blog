@@ -1,115 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20200123/</loc>
     <lastmod>2020-01-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191224/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191216/</loc>
     <lastmod>2019-12-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191212/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191211/</loc>
     <lastmod>2019-12-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/</loc>
     <lastmod>2020-01-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/c&#43;&#43;/</loc>
     <lastmod>2020-01-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/categories/</loc>
     <lastmod>2020-01-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/docker/</loc>
     <lastmod>2020-01-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/</loc>
     <lastmod>2020-01-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/</loc>
     <lastmod>2020-01-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/categories/technology/</loc>
     <lastmod>2020-01-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/anime/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/comic/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/categories/diary/</loc>
     <lastmod>2019-12-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/gadget/</loc>
     <lastmod>2019-12-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/game/</loc>
     <lastmod>2019-12-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/movie/</loc>
     <lastmod>2019-12-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/beer/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/travel/</loc>
     <lastmod>2019-12-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/about/</loc>
     <lastmod>2019-12-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/misc/</loc>
     <lastmod>2019-12-11T00:00:00+00:00</lastmod>
   </url>
-  
 </urlset>
