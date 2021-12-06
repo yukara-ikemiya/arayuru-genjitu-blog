@@ -16,3 +16,6 @@ draft = false
 関東で働いている音響信号処理エンジニア。
 趣味は、映画・料理・美術館巡り・ビリヤードなど。
 週に３日くらいカレーを食べます。
+
+- [Twitter](https://twitter.com/yukara_ikemiya)
+- [GitHub](https://github.com/yukara-ikemiya)
