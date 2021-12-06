@@ -6,7 +6,16 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DIYで作る賃貸向けホームシアター</title>
+      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20211206/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20211206/</guid>
+      <description>本記事は「壁 Advent Calendar 2021」6日目の記事です。 ホームシアターのすすめ 人は壁があると何かを設置したくなる生き物ですが、特に男女問わず圧倒的な人気</description>
+    </item>
+    
     <item>
       <title>Docker で任意のユーザに環境変数を追加する</title>
       <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20200123/</link>
