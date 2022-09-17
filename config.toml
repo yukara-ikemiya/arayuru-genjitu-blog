@@ -5,20 +5,20 @@ hasCJKLanguage 	= true
 disqusShortname = ""
 paginate        = 6
 # SectionPagesMenu = "main"
-RelativeURLs   =true
-CanonifyURLs	   =true
+RelativeURLs    = true
+CanonifyURLs	  = true
 publishDir = "docs"
 
 
 [params]
   title       = "あらゆる現実のはなし"
   subtitle    = "たまに役に立つ雑記帳"
-  copyright   = "© 2019"
+  copyright   = "© 2019--2022"
 
   cover       = "img/blog-cover.jpg"
   description = "Here is a description of your site."
   metaDescription = "日々の思いつきをまとめた日記・雑記帳"
-  googleAnalytics = ""
+  googleAnalytics = "G-X43C8XPK6Q"
   customCSS = ["css/jp-font.css"]
   RSSLink = ""
 
