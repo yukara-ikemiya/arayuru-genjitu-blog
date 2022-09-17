@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
+    <title>あらゆる現実のはなし</title>
     <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/</link>
-    <description>Recent content on </description>
+    <description>Recent content on あらゆる現実のはなし</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/index.xml" rel="self" type="application/rss+xml" />
@@ -67,7 +67,7 @@
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/about/</guid>
-      <description>京都大学で情報学（音声メディア）の修士課程を修了後、 関東で働いている音響信号処理エンジニア。 趣味は、映画・料理・美術館巡り・ビリヤードなど。</description>
+      <description>池宮 由楽 &amp;ndash; Ikemiya, Yukara 音声・音響信号処理の研究開発をしているエンジニア、 カレーとビールが好き # 経歴 2009 -- 2013 京都大学 工学部 情報学科 2013 -- 2015 京都大学大学院 情</description>
     </item>
     
   </channel>
