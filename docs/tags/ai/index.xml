@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ai on </title>
+    <title>ai on あらゆる現実のはなし</title>
     <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/</link>
-    <description>Recent content in ai on </description>
+    <description>Recent content in ai on あらゆる現実のはなし</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 04 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>お絵描きAIの中では何が行われているか？</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220904/</link>
-      <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
+      <title>お絵描きAIの中では何をしているか？</title>
+      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</link>
+      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220904/</guid>
-      <description>本記事は、一般的なお絵描きAIの仕組みを非エンジニア向けに説明したものです。 より詳しい方は、Stable Diffusion の元となっている以下の論文などをご</description>
+      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</guid>
+      <description>本記事は、一般的なお絵描きAIの仕組みを非エンジニア向けに説明したものです。 これから様々な生成系AIが出てくる中で、技術的な仕組みを直観的に</description>
     </item>
     
   </channel>

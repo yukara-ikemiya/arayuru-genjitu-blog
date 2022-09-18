@@ -6,7 +6,16 @@
     <description>Recent content in Posts on あらゆる現実のはなし</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>お絵描きAIの中では何をしているか？</title>
+      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</link>
+      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</guid>
+      <description>本記事は、一般的なお絵描きAIの仕組みを非エンジニア向けに説明したものです。 これから様々な生成系AIが出てくる中で、技術的な仕組みを直観的に</description>
+    </item>
+    
     <item>
       <title>DIYで作る賃貸向けホームシアター</title>
       <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20211206/</link>
