@@ -204,7 +204,7 @@ GMM は流行りのディープラーニングではありませんが、
 と AI が判断できるようになったわけです。</p>
 <div style="float:left;  width:100%; margin-bottom: 1em; text-align: center;">
   <img src="../../post/img/20220917/fig_image_generation.jpg" style = "width:100%; align:left; margin-bottom:0em; margin-top:0em;" />
-  <font size="3" color="#20b2aa">  300毎の 2pixel 絵画を座標上に可視化したもの  </font>
+  <font size="3" color="#20b2aa">  300 枚の 2pixel 絵画から AI が学習した分布と、新しい絵画の生成  </font>
 </div>
 <p>新しい絵画の生成は、学習された分布上の確率が高いところから適当に画像を選ぶことで行われます。
 このように絵画を生成した結果、学習に使った作品と「似ている<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>」けれども全く新しい絵画が生成されるというわけです。</p>
@@ -219,7 +219,7 @@ GMM は流行りのディープラーニングではありませんが、
 1 pixel 目が「画風」、2 pixel 目が「風景」を表していたと仮定しましょう<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>。</p>
 <div style="float:left;  width:100%; margin-bottom: 1em; text-align: center;">
   <img src="../../post/img/20220917/fig_reference_based_generation.jpg" style = "width:100%; align:left; margin-bottom:0em; margin-top:0em;" />
-  <font size="3" color="#20b2aa">  300 枚の 2pixel 絵画を座標上に可視化したもの  </font>
+  <font size="3" color="#20b2aa">  入力した作品の「画風」を模倣した生成  </font>
 </div>
 <p>このとき、学習には用いられていない 301 人目の画家の作品からうまいこと「画風」の数値が取り出せたとします。
 そうすると「画風」の数値は固定したまま、事前に学習された分布 (AI) から確率の高い、
@@ -285,15 +285,15 @@ GMM は流行りのディープラーニングではありませんが、
     <div class="read-next-card-content">
       
         <ul>
-          <li><a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191212/">シンガポールの壁</a></li>            
-        
-                      
-        
-          <li><a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191211/">ブログのはじまり</a></li>            
-        
           <li><a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20200123/">Docker で任意のユーザに環境変数を追加する</a></li>            
         
           <li><a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191224/">結婚式は次元の壁を超えられたか？</a></li>            
+        
+          <li><a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191216/">一人暮らしで始めるホームシアター</a></li>            
+        
+                      
+        
+          <li><a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20211206/">DIYで作る賃貸向けホームシアター</a></li>            
         </ul>
     </div>
     <footer class="read-next-card-footer">
