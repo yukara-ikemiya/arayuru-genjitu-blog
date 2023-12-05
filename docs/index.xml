@@ -6,7 +6,16 @@
     <description>Recent content on あらゆる現実のはなし</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 18 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>お家で炭火焼きをする</title>
+      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231205/</link>
+      <pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231205/</guid>
+      <description>壁 Advent Calendar 2023 ５日目 初回の壁ACから８年目。 「創造的人生の持ち時間は10年だ」 壁ACを迎える度に思い出す言葉の一つです。 （導入と本記事は関係ありま</description>
+    </item>
+    
     <item>
       <title>お絵描きAIの中では何をしているか？</title>
       <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</link>
@@ -76,7 +85,7 @@
       <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/about/</guid>
-      <description>池宮 由楽 &amp;ndash; Ikemiya, Yukara 音声・音響信号処理の研究開発をしているエンジニア、 カレーとビールが好き # 経歴 2009 -- 2013 京都大学 工学部 情報学科 2013 -- 2015 京都大学大学院 情</description>
+      <description>池宮 由楽 &amp;ndash; Ikemiya, Yukara 生成AI・音響信号処理の研究開発をしています、 カレーとビールが好き # 経歴 2009 -- 2013 京都大学 工学部 情報学科 2013 -- 2015 京都大学大学院 情報学</description>
     </item>
     
   </channel>
