@@ -6,7 +6,18 @@
     <description>Recent content in ai on あらゆる現実のはなし</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 18 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Best Practices for Multi-Node Training on ABCI with PyTorch</title>
+      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231217/</link>
+      <pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231217/</guid>
+      <description>This article summarizes a simple method for conducting distributed training with ABCI which is the GPU cloud computing service by AIST. The following repository provides a simple example of training codes on ABCI with support for multi-node training.
+https://github.com/yukara-ikemiya/abci-code-sample
+Let&amp;rsquo;s use ABCI for training large-scale models  AI Bridging Cloud Infrastructure (ABCI) is the world&amp;rsquo;s first large-scale Open AI Computing Infrastructure, constructed and operated by National Institute of Advanced Industrial Science and Technology (AIST).</description>
+    </item>
+    
     <item>
       <title>お絵描きAIの中では何をしているか？</title>
       <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</link>

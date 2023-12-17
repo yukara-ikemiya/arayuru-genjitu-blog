@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ja-jp" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Best Practices for Multi-Node Training on ABCI with PyTorch &middot; あらゆる現実のはなし</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/favicon.ico" />
+    <link rel="canonical" href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231217/" />
+
+     <meta name="description" content="This article summarizes a simple method for conducting distributed training with ABCI which is the GPU cloud computing service by AIST. The following repository" /> 
+
+     
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/img/20220917/painting_robot.jpg"/>
+    
+ 
+    <meta name="twitter:title" content="Best Practices for Multi-Node Training on ABCI with PyTorch"/>
+    <meta name="twitter:description" content="This article summarizes a simple method for conducting distributed training with ABCI which is the GPU cloud computing service by AIST. The following repository"/>
+    <meta name="twitter:url" content="https://yukara-ikemiya.github.io/post/20231217/" />
+    <meta name="twitter:site" content="@yukara_ikemiya"/>
+
+    <meta property="og:site_name" content="あらゆる現実のはなし" />
+    <meta property="og:title" content="Best Practices for Multi-Node Training on ABCI with PyTorch &middot; あらゆる現実のはなし" />
+    <meta property="og:url" content="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231217/" />
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="This article summarizes a simple method for conducting distributed training with ABCI which is the GPU cloud computing service by AIST. The following repository" />
+
+    <meta property="article:published_time" content="2023-12-17T00:00:00Z" />
+    <meta property="article:tag" content="ai" /><meta property="article:tag" content="deep learning" />
+
+    <meta property="og:image" content="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/img/20220917/painting_robot.jpg"/>
+
+
+    <meta name="generator" content="Hugo 0.89.4" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/built/screen.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/css/casper-two.css" /> 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+     <link rel="stylesheet" href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/css/jp-font.css" />  <link rel="stylesheet" href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/css/code_block.css" />  <link rel="stylesheet" href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/css/myimage.css" /> 
+
+     
+
+</head>
+
+
+<body class="post-template">
+  <div class="site-wrapper"> 
+
+<header class="site-header outer">
+  <div class="inner">
+    <nav class="site-nav">
+      <div class="site-nav-left">
+
+        <ul class="nav" role="menu">
+        
+        
+        
+            <li class="" role="menuitem">
+              <a href="../../">Home</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="../../about/">About me</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="../../categories/">Categories</a>
+            </li>
+        
+            <li class="" role="menuitem">
+              <a href="../../tags/">Tags</a>
+            </li>
+        
+      </ul></div>
+
+      <div class="site-nav-right">
+        <div class="social-links">
+                    
+
+                    <a class="social-link social-link-tw" href="https://twitter.com/yukara_ikemiya" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg></a>
+
+                    <a class="social-link" href="https://github.com/yukara-ikemiya" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+
+                    <a class="social-link" href="https://www.linkedin.com/in/yukara-ikemiya-16a6b85a" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 512 512"><path d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683 C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615 c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915 s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z" /></svg></a>
+
+                    
+        </div>  
+            
+      </div>
+
+    </nav>  
+
+  </div>
+</header>
+
+<main id="site-main" class="site-main outer" role="main">
+  <div class="inner">
+    
+      <article class="post-full post"> 
+    <header class="post-full-header">
+        <section class="post-full-meta">
+            <time class="post-full-meta-date" datetime="2023-12-17">17 December 2023</time>
+                <span class="date-divider">/</span> <a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/">#ai</a>&nbsp;<a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/deep-learning/">#deep learning</a>&nbsp;
+        </section>
+        <h1 class="post-full-title">Best Practices for Multi-Node Training on ABCI with PyTorch</h1>
+    </header>
+    
+    <figure class="post-full-image" style="background-image: url(https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/img/20220917/painting_robot.jpg)">
+    </figure>
+
+    <section class="post-full-content">
+        <div class="kg-card-markdown">
+        <p>This article summarizes a simple method for conducting distributed training with ABCI which is the GPU cloud computing service by AIST. 
+The following repository provides a simple example of training codes on ABCI with support for multi-node training.</p>
+<p><strong><a href="https://github.com/yukara-ikemiya/abci-code-sample">https://github.com/yukara-ikemiya/abci-code-sample</a></strong></p>
+<h1 id="lets-use-abci-for-training-large-scale-models">Let&rsquo;s use ABCI for training large-scale models</h1>
+<blockquote>
+<p>AI Bridging Cloud Infrastructure (ABCI) is the world&rsquo;s first large-scale Open AI Computing Infrastructure, constructed and operated by National Institute of Advanced Industrial Science and Technology (AIST).
+(<a href="https://abci.ai/en/about_abci/">https://abci.ai/en/about_abci/</a>)</p>
+</blockquote>
+<p>→  <a href="https://abci.ai/en/how_to_use/">How to use ABCI</a></p>
+<h1 id="create-a-python-environment">Create a Python environment</h1>
+<p>ABCI supports the use of <a href="https://docs.sylabs.io/guides/3.0/user-guide/quick_start.html">Singularity</a> containers for building learning environments. There are several ways to build a Singularity container (SIF), but in my repository, scripts are provided for creating a Docker image first and then converting that image into a SIF file.</p>
+<p>Once a SIF file is created, move it to any directory on ABCI and use it for running your training.</p>
+<h1 id="prepare-training-codes">Prepare training codes</h1>
+<p>When conducting distributed training with PyTorch, it is common to write training codes using DistributedDataParallel (DDP). However, here, it is recommended to utilize <a href="https://huggingface.co/docs/accelerate/index">HuggingFace Accelerate</a>, which wraps DDP, allowing for a more straightforward implementation. This not only simplifies the codes but also helps prevent the introduction of potential bugs.</p>
+<p><a href="https://huggingface.co/docs/accelerate/index">HuggingFace Accelerate</a></p>
+<h3 id="model-simplest-auto-encoder">Model (simplest auto-encoder)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> torch
+<span style="color:#f92672">from</span> torch <span style="color:#f92672">import</span> nn
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SimpleModule</span>(nn<span style="color:#f92672">.</span>Module):
+    <span style="color:#66d9ef">def</span> __init__(self, dim_in, dim_hidden):
+        super()<span style="color:#f92672">.</span>__init__()
+
+        self<span style="color:#f92672">.</span>dim_in <span style="color:#f92672">=</span> dim_in
+        self<span style="color:#f92672">.</span>dim_hidden <span style="color:#f92672">=</span> dim_hidden
+
+        self<span style="color:#f92672">.</span>net <span style="color:#f92672">=</span> nn<span style="color:#f92672">.</span>Sequential(
+            nn<span style="color:#f92672">.</span>Linear(self<span style="color:#f92672">.</span>dim_in, self<span style="color:#f92672">.</span>dim_hidden),
+            nn<span style="color:#f92672">.</span>Linear(self<span style="color:#f92672">.</span>dim_hidden, self<span style="color:#f92672">.</span>dim_in)
+        )
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">forward</span>(self, x):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>net(x)
+</code></pre></div><h3 id="toy-dataset">Toy dataset</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+<span style="color:#f92672">import</span> torch
+<span style="color:#f92672">from</span> torch.utils.data <span style="color:#f92672">import</span> Dataset
+
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DummyDataset</span>(Dataset):
+    <span style="color:#66d9ef">def</span> __init__(self, dim:int, num_data:int<span style="color:#f92672">=</span><span style="color:#ae81ff">10000</span>):
+        super()<span style="color:#f92672">.</span>__init__()
+        self<span style="color:#f92672">.</span>dim <span style="color:#f92672">=</span> dim
+        self<span style="color:#f92672">.</span>num_data <span style="color:#f92672">=</span> num_data
+    
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_item</span>(self, idx):
+        data <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, idx, self<span style="color:#f92672">.</span>dim)
+        <span style="color:#66d9ef">return</span> torch<span style="color:#f92672">.</span>from_numpy(data<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>float32))
+
+    <span style="color:#66d9ef">def</span> __len__(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>num_data
+
+    <span style="color:#66d9ef">def</span> __getitem__(self, idx):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>get_item(idx)
+</code></pre></div><h3 id="training-code">Training code</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> argparse
+
+<span style="color:#f92672">import</span> torch
+<span style="color:#f92672">from</span> torch.utils.data <span style="color:#f92672">import</span> DataLoader
+<span style="color:#f92672">from</span> accelerate <span style="color:#f92672">import</span> Accelerator
+
+<span style="color:#f92672">from</span> simple_module <span style="color:#f92672">import</span> SimpleModule
+<span style="color:#f92672">from</span> dummy_dataset <span style="color:#f92672">import</span> DummyDataset
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_args</span>():
+    parser <span style="color:#f92672">=</span> argparse<span style="color:#f92672">.</span>ArgumentParser()
+    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--bs&#34;</span>, type<span style="color:#f92672">=</span>int, default<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>, help<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;batch size&#34;</span>)
+    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--lr&#34;</span>, type<span style="color:#f92672">=</span>float, default<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0001</span>, help<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;learning rate&#34;</span>)
+    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--amp&#34;</span>, type<span style="color:#f92672">=</span>str, default<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;fp16&#39;</span>, help<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;autmatic mixed precision&#34;</span>)
+    <span style="color:#66d9ef">return</span> parser<span style="color:#f92672">.</span>parse_args()
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+    args <span style="color:#f92672">=</span> get_args()
+
+    <span style="color:#75715e"># Initialize accelerator</span>
+    accelerator <span style="color:#f92672">=</span> Accelerator(mixed_precision<span style="color:#f92672">=</span>args<span style="color:#f92672">.</span>amp, split_batches<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+
+    <span style="color:#75715e"># Model</span>
+    model <span style="color:#f92672">=</span> SimpleModule(dim_in<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>, dim_hidden<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>)
+
+    <span style="color:#75715e"># Dataset</span>
+    num_data <span style="color:#f92672">=</span> <span style="color:#ae81ff">10000</span>
+    dataset <span style="color:#f92672">=</span> DummyDataset(model<span style="color:#f92672">.</span>dim_in, num_data)
+    dataloader <span style="color:#f92672">=</span> DataLoader(dataset, batch_size<span style="color:#f92672">=</span>args<span style="color:#f92672">.</span>bs, num_workers<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>,
+                            pin_memory<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, persistent_workers<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, shuffle<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+
+    <span style="color:#75715e"># Optimizer</span>
+    optimizer <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>optim<span style="color:#f92672">.</span>Adam(model<span style="color:#f92672">.</span>parameters(), lr<span style="color:#f92672">=</span>args<span style="color:#f92672">.</span>lr, betas<span style="color:#f92672">=</span>[<span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">0.99</span>])
+
+    <span style="color:#75715e"># Prepare for distributed training</span>
+    model, dataloader, optimizer <span style="color:#f92672">=</span> accelerator<span style="color:#f92672">.</span>prepare(model, dataloader, optimizer)
+
+    <span style="color:#66d9ef">for</span> idx_e <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">200</span>):
+        loss_epoch <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.</span>
+        <span style="color:#66d9ef">for</span> idx_d, x <span style="color:#f92672">in</span> enumerate(dataloader):
+            <span style="color:#75715e"># forward</span>
+            optimizer<span style="color:#f92672">.</span>zero_grad(set_to_none<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+            y <span style="color:#f92672">=</span> model(x)
+
+            <span style="color:#75715e"># RMSE loss</span>
+            loss <span style="color:#f92672">=</span> ((x <span style="color:#f92672">-</span> y) <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>)<span style="color:#f92672">.</span>mean()<span style="color:#f92672">.</span>sqrt()
+
+            <span style="color:#75715e"># backward</span>
+            accelerator<span style="color:#f92672">.</span>backward(loss)
+            optimizer<span style="color:#f92672">.</span>step()
+
+            loss_epoch <span style="color:#f92672">+=</span> loss<span style="color:#f92672">.</span>detach()
+
+        <span style="color:#66d9ef">if</span> accelerator<span style="color:#f92672">.</span>is_main_process:
+            loss_epoch <span style="color:#f92672">/=</span> idx_d <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+            print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Epoch </span><span style="color:#e6db74">{</span>idx_e<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> : </span><span style="color:#e6db74">{</span>loss_epoch<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+    main()
+</code></pre></div><h1 id="prepare-training-codes-1">Prepare training codes</h1>
+<p>There are cases where the environment variables used internally by the HuggingFace Accelerator are not automatically retrieved. 
+To address this, the Python command is wrapped as follows to copy and utilize variables from OpenMPI.</p>
+<h3 id="pythonbash">python.bash</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># define (copy) environment variables for Huggingface Accelerate</span>
+export WORLD_SIZE<span style="color:#f92672">=</span>$OMPI_COMM_WORLD_SIZE
+export RANK<span style="color:#f92672">=</span>$OMPI_COMM_WORLD_RANK
+export LOCAL_RANK<span style="color:#f92672">=</span>$OMPI_COMM_WORLD_LOCAL_RANK
+export MASTER_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">11111</span>
+exec python <span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+</code></pre></div><p>Most of required configurations (e.g. gpus per node) can be obtained automatically.</p>
+<h3 id="trainbash">train.bash</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span><span style="color:#75715e">#$-cwd</span>
+
+<span style="color:#75715e"># load modules </span>
+<span style="color:#75715e"># (this can be modified based on the ABCI version.)</span>
+source /etc/profile.d/modules.sh
+module load hpcx/2.12
+module load singularitypro/3.11
+module load cuda/11.6/11.6.2
+module load nccl/2.11/2.11.4-1
+
+<span style="color:#75715e"># Singularity container path</span>
+CONTAINER_PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/path/to/your/container.sif&#34;</span>
+
+<span style="color:#75715e"># job ID is available if you need</span>
+JOB_NAME<span style="color:#f92672">=</span>$JOB_ID
+
+<span style="color:#75715e"># detect GPU type, V100 or A100</span>
+GPU_INFO<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>nvidia-smi --query-gpu<span style="color:#f92672">=</span>gpu_name --format<span style="color:#f92672">=</span>csv<span style="color:#66d9ef">)</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> $GPU_INFO <span style="color:#f92672">=</span>~ <span style="color:#e6db74">&#34;V100&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+    NUM_GPUS_PER_NODE<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>
+<span style="color:#66d9ef">elif</span> <span style="color:#f92672">[[</span> $GPU_INFO <span style="color:#f92672">=</span>~ <span style="color:#e6db74">&#34;A100&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+    NUM_GPUS_PER_NODE<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>
+<span style="color:#66d9ef">else</span>
+    readonly PROC_ID<span style="color:#f92672">=</span>$!
+    kill <span style="color:#e6db74">${</span>PROC_ID<span style="color:#e6db74">}</span>
+<span style="color:#66d9ef">fi</span>
+
+<span style="color:#75715e"># get number of GPUs</span>
+GPUS_IN_ONE_NODE<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>nvidia-smi --list-gpus | wc -l<span style="color:#66d9ef">)</span>
+NUM_GPU<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>expr <span style="color:#e6db74">${</span>NHOSTS<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\*</span> <span style="color:#e6db74">${</span>GPUS_IN_ONE_NODE<span style="color:#e6db74">}</span><span style="color:#66d9ef">)</span>
+echo <span style="color:#e6db74">&#34;NUM_GPU = </span><span style="color:#e6db74">${</span>NUM_GPU<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+
+<span style="color:#75715e"># MPI options</span>
+MPIOPTS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-np </span>$NUM_GPU<span style="color:#e6db74"> -N </span><span style="color:#e6db74">${</span>NUM_GPUS_PER_NODE<span style="color:#e6db74">}</span><span style="color:#e6db74"> -x MASTER_ADDR=</span><span style="color:#e6db74">${</span>HOSTNAME<span style="color:#e6db74">}</span><span style="color:#e6db74"> -hostfile </span>$SGE_JOB_HOSTLIST<span style="color:#e6db74">&#34;</span>
+
+<span style="color:#75715e"># directories to be mounted</span>
+ROOT_SRC<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/path/to/your/source/codes/&#34;</span>
+
+<span style="color:#75715e"># configurations</span>
+batch_size<span style="color:#f92672">=</span><span style="color:#ae81ff">256</span> <span style="color:#75715e"># multiple of 16 (2 nodes)</span>
+learning_rate<span style="color:#f92672">=</span>0.0001
+amp<span style="color:#f92672">=</span>fp16
+
+<span style="color:#75715e"># execute</span>
+mpirun $MPIOPTS <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    singularity exec --nv --pwd <span style="color:#e6db74">${</span>ROOT_SRC<span style="color:#e6db74">}</span>/src/ -B <span style="color:#e6db74">${</span>ROOT_SRC<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#e6db74">${</span>CONTAINER_PATH<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    <span style="color:#e6db74">${</span>ROOT_SRC<span style="color:#e6db74">}</span>/job/python.bash <span style="color:#e6db74">${</span>ROOT_SRC<span style="color:#e6db74">}</span>/src/train.py <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --bs <span style="color:#e6db74">${</span>batch_size<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --lr <span style="color:#e6db74">${</span>learning_rate<span style="color:#e6db74">}</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --amp <span style="color:#e6db74">${</span>amp<span style="color:#e6db74">}</span>
+</code></pre></div><p>Finally, you can run your training on multiple nodes on ABCI.</p>
+<h3 id="_run_job_on_abci_nodesbash">_run_job_on_abci_nodes.bash</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># training with 2 nodes</span>
+qsub -j y -g gce12345 -l rt_AF<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span> -l h_rt<span style="color:#f92672">=</span>0:30:00 ./job/train.bash
+</code></pre></div>    
+        </div>
+    </section>
+
+    <footer class="post-full-footer">
+      <section class="author-card">
+        <img class="author-profile-image" src="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/img/yukara_profile.jpg" alt="Author" />
+        <section class="author-card-content">
+            <h4 class="author-card-name"><a href="https://yukara-ikemiya.github.io/">Yukara Ikemiya</a></h4>
+                <p>audio software engineer</p>
+        </section>
+      </section>
+    </footer>
+</article>
+    
+    
+    
+
+  </div>
+</main>
+
+
+<aside class="read-next outer">
+  <div class="inner">
+    <div class="read-next-feed">      
+      
+<article class="read-next-card" 
+            style="background-image: url(https://yukara-ikemiya.github.io/arayuru-genjitu-blog/img/blog-cover.jpg);" >
+    <header class="read-next-card-header">
+        <small class="read-next-card-header-sitetitle">&mdash; あらゆる現実のはなし &mdash;</small>
+        
+        <h3 class="read-next-card-header-title"><a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/">#ai</a></h3>
+    </header>
+    <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+    </div>
+
+    <div class="read-next-card-content">
+      
+        <ul>
+          <li><a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231205/">お家で炭火焼きをする</a></li>            
+        
+          <li><a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20211206/">DIYで作る賃貸向けホームシアター</a></li>            
+        
+          <li><a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191224/">結婚式は次元の壁を超えられたか？</a></li>            
+        
+          <li><a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20200123/">Docker で任意のユーザに環境変数を追加する</a></li>            
+        </ul>
+    </div>
+    <footer class="read-next-card-footer">
+      
+        <a href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/">See all related posts →</a>
+    </footer>
+</article>
+
+
+      
+      
+      <article class="post-card post"> 
+    
+    <a class="post-card-image-link" href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231205/">
+      <div class="post-card-image" style="background-image: url(https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/img/20231205/chiken_4.jpg)"></div>
+    </a>
+    
+
+    <div class="post-card-content">
+      <a class="post-card-content-link" href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231205/">
+          <header class="post-card-header">
+              <span class="post-card-tags">
+              #food  </span>
+              
+              <h2 class="post-card-title">お家で炭火焼きをする</h2>
+          </header>
+          <section class="post-card-excerpt">
+              
+                <p>壁 Advent Calendar 2023 ５日目 初回の壁ACから８年目。 「創造的人生の持ち時間は10年だ」 壁ACを迎える度に思い出す言葉の一つです。 （導入と本記事は関係ありま ...  </p>
+              
+          </section>
+      </a>
+
+      <footer class="post-card-meta">
+          <img class="author-profile-image" src="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/img/yukara_profile.jpg" alt="Author" />
+          <span class="post-card-author"><a href="../../">Yukara Ikemiya</a></span>
+      </footer>
+    </div>
+</article>
+      
+    </div>
+  </div>
+</aside>
+
+<div class="floating-header">
+  <div class="floating-header-logo">
+    <a href="https://yukara-ikemiya.github.io/">
+      
+      
+    </a>
+  </div>
+  
+  <div class="floating-header-title">Best Practices for Multi-Node Training on ABCI with PyTorch</div>
+  <div class="floating-header-backhome"><a href="../../">Back to Home</a></div>
+  <div class="floating-header-share">
+    <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
+    </div>
+    
+    <a class="floating-header-share-tw" href="https://twitter.com/share?text=Best%20Practices%20for%20Multi-Node%20Training%20on%20ABCI%20with%20PyTorch&amp;url=https%3a%2f%2fyukara-ikemiya.github.io%2farayuru-genjitu-blog%2fpost%2f20231217%2f"
+          onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+      </a>
+      <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fyukara-ikemiya.github.io%2farayuru-genjitu-blog%2fpost%2f20231217%2f"
+          onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+      </a>
+  </div>
+
+  <progress class="progress" value="0">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+</div>
+
+
+
+<footer class="site-footer outer">
+  <div class="site-footer-content inner">
+    <section class="copyright" style="line-height: 1.3em;">
+      <a href="../../">Yukara Ikemiya</a> © 2019--2022 <br>
+      <span style="font-size: 0.8em; color: #555;">Hugo port of <a href="https://github.com/TryGhost/Casper">Casper 2.1.7</a> by <a href="https://www.telematika.org">EM</a></span>
+    </section>
+    <nav class="site-footer-nav">
+        <a href="../../">Latest Posts</a>
+        
+        <a href="https://twitter.com/yukara_ikemiya" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://github.com/yukara-ikemiya" target="_blank" rel="noopener">Github</a>
+        <a href="https://www.linkedin.com/in/yukara-ikemiya-16a6b85a" target="_blank" rel="noopener">LinkedIn</a>
+        
+    </nav>  
+  </div>
+</footer>
+
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/js/jquery.fitvids.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X43C8XPK6Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-X43C8XPK6Q');
+  </script>
+
+
+    <script>
+
+
+
+
+
+$(document).ready(function () {
+    
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+</body></html>
