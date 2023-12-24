@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>music on あらゆる現実のはなし</title>
+    <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/music/</link>
+    <description>Recent content in music on あらゆる現実のはなし</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suno AI の作り方 (技術者の観点から)</title>
+      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231224/</link>
+      <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231224/</guid>
+      <description>日本音響学会 学生・若手フォーラム Advent Calendar 2023 24日目 Suno AI とは、歌詞と曲のスタイル（と曲名）を指定するだけで、自動で歌詞入りの楽曲を作成してくれる生</description>
+    </item>
+    
+  </channel>
+</rss>
