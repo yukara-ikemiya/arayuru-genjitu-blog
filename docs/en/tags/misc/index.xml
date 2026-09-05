@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Misc on Talks on Every Reality</title>
+		<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/tags/misc/</link>
+		<description>Recent content in Misc on Talks on Every Reality</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 11 Dec 2019 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Starting This Blog</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/post/20191211/</link>
+				<pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/post/20191211/</guid>
+				<description>&lt;p&gt;It is said that distinguished engineers keep blogs, so I have resolved to start one of my own.&lt;/p&gt;&#xA;&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;&#xA;&lt;p&gt;A long time ago, I used to write tech articles on Hatena Blog. But that blog is no longer active, so I decided to set up a brand-new blog where I can write about a wider variety of miscellaneous topics.&lt;/p&gt;&#xA;&lt;h2 id=&#34;design&#34;&gt;Design&lt;/h2&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t know much about HTML, but after some Googling, I found that building a static website automatically from Markdown using &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and hosting it on &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt; seems to be the trendy approach, so I went with it.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

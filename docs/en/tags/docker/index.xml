@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Docker on Talks on Every Reality</title>
+		<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/tags/docker/</link>
+		<description>Recent content in Docker on Talks on Every Reality</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Adding Environment Variables for Arbitrary Users in Docker</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/post/20200123/</link>
+				<pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/post/20200123/</guid>
+				<description>&lt;h1 id=&#34;goal&#34;&gt;Goal&lt;/h1&gt;&#xA;&lt;p&gt;When building a Docker image, we often install various C++ libraries. However, when working inside the container as a non-root user, header files may not be automatically included in the default search paths, which can be inconvenient.&lt;/p&gt;&#xA;&lt;p&gt;We want to configure this neatly during the image build (inside the Dockerfile). However, the &lt;code&gt;ENV&lt;/code&gt; directive only sets environment variables directly or for the root context, and might not always propagate properly to custom non-root users added later in certain shell sessions.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

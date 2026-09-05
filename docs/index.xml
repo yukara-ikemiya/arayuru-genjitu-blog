@@ -1,121 +1,101 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>あらゆる現実のはなし</title>
-    <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/</link>
-    <description>Recent content on あらゆる現実のはなし</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Suno AI の作り方 (技術者の観点から)</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231224/</link>
-      <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231224/</guid>
-      <description>日本音響学会 学生・若手フォーラム Advent Calendar 2023 24日目 Suno AI とは、歌詞と曲のスタイル（と曲名）を指定するだけで、自動で歌詞入りの楽曲を作成してくれる生</description>
-    </item>
-    
-    <item>
-      <title>100％痩せる方法2023</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231221/</link>
-      <pubDate>Thu, 21 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231221/</guid>
-      <description>壁 Advent Calendar 2023 21日目 結婚式、正月太りや夏へ向けた準備など、ちょっと１ケ月で３kgくらい痩せたいなと思うタイミングはないでしょうか。 しかし人間は怠</description>
-    </item>
-    
-    <item>
-      <title>Best Practices for Multi-Node Training on ABCI with PyTorch</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231217/</link>
-      <pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231217/</guid>
-      <description>This article summarizes a simple method for conducting distributed training with ABCI which is the GPU cloud computing service by AIST. The following repository provides a simple example of training codes on ABCI with support for multi-node training.
-https://github.com/yukara-ikemiya/abci-code-sample
-Let&amp;rsquo;s use ABCI for training large-scale models  AI Bridging Cloud Infrastructure (ABCI) is the world&amp;rsquo;s first large-scale Open AI Computing Infrastructure, constructed and operated by National Institute of Advanced Industrial Science and Technology (AIST).</description>
-    </item>
-    
-    <item>
-      <title>お家で炭火焼きをする</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231205/</link>
-      <pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231205/</guid>
-      <description>壁 Advent Calendar 2023 ５日目 初回の壁ACから８年目。 「創造的人生の持ち時間は10年だ」 壁ACを迎える度に思い出す言葉の一つです。 （導入と本記事は関係ありま</description>
-    </item>
-    
-    <item>
-      <title>お絵描きAIの中では何をしているか？</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</link>
-      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</guid>
-      <description>本記事は、一般的なお絵描きAIの仕組みを非エンジニア向けに説明したものです。 これから様々な生成系AIが出てくる中で、技術的な仕組みを直観的に</description>
-    </item>
-    
-    <item>
-      <title>DIYで作る賃貸向けホームシアター</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20211206/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20211206/</guid>
-      <description>本記事は「壁 Advent Calendar 2021」6日目の記事です。 ホームシアターのすすめ 人は壁があると何かを設置したくなる生き物ですが、特に男女問わず圧倒的な人気</description>
-    </item>
-    
-    <item>
-      <title>Docker で任意のユーザに環境変数を追加する</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20200123/</link>
-      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20200123/</guid>
-      <description>やりたいこと Docker イメージを作るときに C++ ライブラリとか色々いれますが、 実際に（コンテナ内で）使おうとするとヘッダーファイルにパスが通っていなくて</description>
-    </item>
-    
-    <item>
-      <title>結婚式は次元の壁を超えられたか？</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191224/</link>
-      <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191224/</guid>
-      <description>次元超え結婚式 先日、友達（新婦）と２次元のキャラクター（新郎）との結婚式に参列してきました。 以下は、本人による振り返りです。 次元の壁を越える</description>
-    </item>
-    
-    <item>
-      <title>一人暮らしで始めるホームシアター</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191216/</link>
-      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191216/</guid>
-      <description>ホームシアターのすすめ ホームシアターって知っていますか？ ホーム（家）のシアター（映画館）です。 でっかい画面で映画とかゲーム楽しめたら最高です</description>
-    </item>
-    
-    <item>
-      <title>シンガポールの壁</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191212/</link>
-      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191212/</guid>
-      <description>本記事は「壁 Advent Calendar 2019」11日目のなにかです。 今年は人工知能に蹂躙されることもなく、非常に健全なカレンダーとなっていて素晴らしいと思います</description>
-    </item>
-    
-    <item>
-      <title>ブログのはじまり</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191211/</link>
-      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191211/</guid>
-      <description>やうしうな技術者もすなるブログといふものを我もしてみむとてするなり。 目的 はるか昔にはてなブログで技術記事みたいなのを書いた時代もありましたが</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/about/</link>
-      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/about/</guid>
-      <description>池宮 由楽 &amp;ndash; Ikemiya, Yukara 生成AI・音響信号処理の研究開発をしています、 カレーとビールが好き # 経歴 2009 -- 2013 京都大学 工学部 情報学科 2013 -- 2015 京都大学大学院 情報学</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>あらゆる現実のはなし</title>
+		<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/</link>
+		<description>Recent content on あらゆる現実のはなし</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Suno AI の作り方 (技術者の観点から)</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231224/</link>
+				<pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231224/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://qiita.com/advent-calendar/2023/asj-fresh&#34;&gt;日本音響学会 学生・若手フォーラム Advent Calendar 2023&lt;/a&gt; 24日目&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Suno AI とは、歌詞と曲のスタイル（と曲名）を指定するだけで、自動で歌詞入りの楽曲を作成してくれる生成 AI サービスです。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>100％痩せる方法2023</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231221/</link>
+				<pubDate>Thu, 21 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231221/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://adventar.org/calendars/9082&#34;&gt;壁 Advent Calendar 2023&lt;/a&gt; 21日目&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;結婚式、正月太りや夏へ向けた準備など、ちょっと１ケ月で３kgくらい痩せたいなと思うタイミングはないでしょうか。&#xA;しかし人間は怠慢なため、多くの人はダイエットにおいて一定の壁を突破することができません。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>PyTorch &#43; ABCI によるマルチノード分散学習のベストプラクティス</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231217/</link>
+				<pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231217/</guid>
+				<description>&lt;p&gt;本記事では、産総研が提供するGPUクラウド計算基盤「ABCI」を用いて分散学習を行うためのシンプルな方法をまとめます。&#xA;以下のレポジトリに、マルチノード学習に対応した ABCI 向け学習コードの最小サンプルを公開しています。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>お家で炭火焼きをする</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231205/</link>
+				<pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231205/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://adventar.org/calendars/9082&#34;&gt;壁 Advent Calendar 2023&lt;/a&gt; ５日目&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;初回の壁ACから８年目。&lt;br&gt;&#xA;「創造的人生の持ち時間は10年だ」&lt;br&gt;&#xA;壁ACを迎える度に思い出す言葉の一つです。&lt;/p&gt;&#xA;&lt;p&gt;（導入と本記事は関係ありません）&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>お絵描きAIの中では何をしているか？</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</link>
+				<pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</guid>
+				<description>&lt;p&gt;本記事は、一般的なお絵描きAIの仕組みを非エンジニア向けに説明したものです。&#xA;これから様々な生成系AIが出てくる中で、技術的な仕組みを直観的にでも理解しておこう、&#xA;といったことを目的としています。&#xA;より詳しい方は、&lt;a href=&#34;https://github.com/CompVis/stable-diffusion&#34;&gt;Stable Diffusion&lt;/a&gt; の元となっている以下の論文などをご参照ください。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>DIYで作る賃貸向けホームシアター</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20211206/</link>
+				<pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20211206/</guid>
+				<description>&lt;p&gt;本記事は「&lt;a href=&#34;https://adventar.org/calendars/6248&#34;&gt;壁 Advent Calendar 2021&lt;/a&gt;」6日目の記事です。&lt;/p&gt;&#xA;&lt;h1 id=&#34;ホームシアターのすすめ&#34;&gt;ホームシアターのすすめ&lt;/h1&gt;&#xA;&lt;p&gt;人は壁があると何かを設置したくなる生き物ですが、特に男女問わず圧倒的な人気を誇る設置物といえば「ホームシアター」です。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Docker で任意のユーザに環境変数を追加する</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20200123/</link>
+				<pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20200123/</guid>
+				<description>&lt;h1 id=&#34;やりたいこと&#34;&gt;やりたいこと&lt;/h1&gt;&#xA;&lt;p&gt;Docker イメージを作るときに C++ ライブラリとか色々いれますが、&#xA;実際に（コンテナ内で）使おうとするとヘッダーファイルにパスが通っていなくて面倒なことがあります。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>結婚式は次元の壁を超えられたか？</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191224/</link>
+				<pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191224/</guid>
+				<description>&lt;h2 id=&#34;次元超え結婚式&#34;&gt;次元超え結婚式&lt;/h2&gt;&#xA;&lt;p&gt;先日、友達（新婦）と２次元のキャラクター（新郎）との結婚式に参列してきました。&#xA;以下は、本人による振り返りです。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.evernote.com/shard/s312/client/snv?noteGuid=c76f5b38-abea-4ab1-a1ba-e4d84087e476&amp;amp;noteKey=0054e64f56b43bc99a22ed1b47644d62&amp;amp;sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs312%2Fsh%2Fc76f5b38-abea-4ab1-a1ba-e4d84087e476%2F0054e64f56b43bc99a22ed1b47644d62&amp;amp;title=%25E6%25AC%25A1%25E5%2585%2583%25E3%2581%25AE%25E5%25A3%2581%25E3%2582%2592%25E8%25B6%258A%25E3%2581%2588%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AE%25E3%2583%2591%25E3%2583%25BC%25E3%2583%2586%25E3%2582%25A3%25E3%2582%2592%25E3%2581%25B2%25E3%2582%2589%25E3%2581%2584%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E4%25BB%25B6&#34;&gt;次元の壁を越えるためのパーティをひらいてみた件&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;参加記録&#34;&gt;参加記録&lt;/h2&gt;&#xA;&lt;p&gt;本記事は、当日起きたことなどをありのまま報告するものです。&#xA;なお、新郎は超有名人のため、はっきりと写真に納めることは禁止されていました。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>一人暮らしで始めるホームシアター</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191216/</link>
+				<pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191216/</guid>
+				<description>&lt;h2 id=&#34;ホームシアターのすすめ&#34;&gt;ホームシアターのすすめ&lt;/h2&gt;&#xA;&lt;p&gt;ホームシアターって知っていますか？&#xA;ホーム（家）のシアター（映画館）です。&#xA;でっかい画面で映画とかゲーム楽しめたら最高ですよね。なんとなくハードル高く感じるかもしれませんが、実は思っているより簡単に作れます。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>シンガポールの壁</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191212/</link>
+				<pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191212/</guid>
+				<description>&lt;p&gt;本記事は「&lt;a href=&#34;https://adventar.org/calendars/4483&#34;&gt;壁 Advent Calendar 2019&lt;/a&gt;」11日目のなにかです。&#xA;今年は人工知能に蹂躙されることもなく、非常に健全なカレンダーとなっていて素晴らしいと思います。&lt;/p&gt;&#xA;&lt;p&gt;でも多分 &lt;a href=&#34;https://twitter.com/azaazarashi&#34;&gt;@azaazarashi&lt;/a&gt; が荒らします。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>ブログのはじまり</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191211/</link>
+				<pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191211/</guid>
+				<description>&lt;p&gt;やうしうな技術者もすなるブログといふものを我もしてみむとてするなり。&lt;/p&gt;&#xA;&lt;h2 id=&#34;目的&#34;&gt;目的&lt;/h2&gt;&#xA;&lt;p&gt;はるか昔にはてなブログで技術記事みたいなのを書いた時代もありましたが、&#xA;もう駆動していないので、せっかくだからもっと雑多なことを書くための&#xA;新しいブログを立ち上げてみた。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>About me</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/about/</link>
+				<pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/about/</guid>
+				<description>&lt;h3 id=&#34;池宮-由楽----ikemiya-yukara&#34;&gt;池宮 由楽  &amp;ndash;  Ikemiya, Yukara&lt;/h3&gt;&#xA;&lt;p&gt;生成AI・音響信号処理の研究開発をしています。&#xA;カレーとビールが好き&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 経歴&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2009&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2013&lt;/span&gt;    京都大学 工学部 情報学科&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2013&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt;    京都大学大学院 情報学研究科 音声メディア研究室&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2015&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;2023&lt;/span&gt;    ソニーグループ株式会社 R&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;Dセンター&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2023&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt; now     ソニーリサーチ株式会社&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 趣味&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;映画 &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; 絵画&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;（&lt;/span&gt;日本画&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;）&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; 美術館 &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; 料理 &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; ビール &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; 珈琲&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;キャンプ &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; 山登り &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; キックボクシング &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; 筋トレ&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ビリヤード &lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt; スプラトゥーン&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div&gt;&#xA;&lt;div class=&#34;image-cropper&#34;&gt;&#xA;  &lt;img class=&#34;rounded&#34; src=&#34;./img/profile.png&#34;  /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;image-cropper&#34;&gt;&#xA;  &lt;img class=&#34;rounded&#34; src=&#34;./img/fishing.jpg&#34;  /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;image-cropper&#34;&gt;&#xA;  &lt;img class=&#34;rounded&#34; src=&#34;./img/snow_mountain.jpg&#34;  /&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;image-cropper&#34;&gt;&#xA;  &lt;img class=&#34;rounded&#34; src=&#34;./img/japanese_painting_cat.jpg&#34;  /&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
+			</item>
+	</channel>
 </rss>

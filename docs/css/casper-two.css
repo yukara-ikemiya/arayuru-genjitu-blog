@@ -73,4 +73,38 @@
 
 .post-full-content pre code {
     color: #e5eff5;
-}    
+}
+
+/* Language Switcher */
+.lang-switcher {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.lang-switcher .lang-item {
+    color: #fff;
+    opacity: 0.6;
+    padding: 4px 6px;
+    text-decoration: none;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+.lang-switcher .lang-item:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+.lang-switcher .lang-item.active {
+    opacity: 1;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.lang-switcher .lang-separator {
+    color: #fff;
+    opacity: 0.4;
+    user-select: none;
+}

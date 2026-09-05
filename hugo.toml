@@ -1,0 +1,120 @@
+baseURL = "https://yukara-ikemiya.github.io/arayuru-genjitu-blog/"
+theme = "casper-two"
+defaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = false
+canonifyURLs = true
+relativeURLs = true
+publishDir = "docs"
+hasCJKLanguage = true
+
+[pagination]
+  pagerSize = 6
+
+[services.disqus]
+  shortname = ""
+
+[services.googleAnalytics]
+  id = "G-X43C8XPK6Q"
+
+[permalinks.page]
+  post = "/post/:filename/"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[languages]
+  [languages.ja]
+    locale = "ja-JP"
+    label = "JA"
+    title = "あらゆる現実のはなし"
+    weight = 1
+    [languages.ja.params]
+      title = "あらゆる現実のはなし"
+      subtitle = "たまに役に立つ雑記帳"
+      copyright = "© 2019--2024"
+      cover = "img/blog-cover.jpg"
+      description = "日々の思いつきをまとめた日記・雑記帳"
+      metaDescription = "日々の思いつきをまとめた日記・雑記帳"
+      googleAnalytics = "G-X43C8XPK6Q"
+      customCSS = ["css/jp-font.css", "css/code_block.css", "css/myimage.css"]
+      RSSLink = ""
+      twitterName = "yukara_ikemiya"
+      fbName = ""
+      githubName = "yukara-ikemiya"
+      linkedinName = "yukara-ikemiya-16a6b85a"
+      mediumName = ""
+      logo = ""
+      orgName = "Yukara Ikemiya"
+      orgWebsite = ""
+      orgDescription = "audio software engineer"
+      showSupport = true
+      author = "YUKARA IKEMIYA"
+      authorAvatar = "img/yukara_profile.jpg"
+      authorLocation = "Kanagawa, Japan"
+      authorWebsite = "https://yukara-ikemiya.github.io/arayuru-genjitu-blog/"
+      authorDescription = "audio software engineer"
+      pageNotFoundTitle = "404 - ページが見つかりません"
+      singleViewStyle = "casper"
+
+    [[languages.ja.menus.main]]
+      name = "Home"
+      url = "/"
+      weight = 200
+
+    [[languages.ja.menus.main]]
+      name = "Categories"
+      url = "/categories/"
+      weight = 99
+
+    [[languages.ja.menus.main]]
+      name = "Tags"
+      url = "/tags/"
+      weight = 98
+
+  [languages.en]
+    locale = "en-US"
+    label = "EN"
+    title = "Talks on Every Reality"
+    weight = 2
+    [languages.en.params]
+      title = "Talks on Every Reality"
+      subtitle = "Occasionally useful notebook"
+      copyright = "© 2019--2024"
+      cover = "img/blog-cover.jpg"
+      description = "A blog and notebook about audio signal processing, AI, and everyday thoughts."
+      metaDescription = "A blog and notebook about audio signal processing, AI, and everyday thoughts."
+      googleAnalytics = "G-X43C8XPK6Q"
+      customCSS = ["css/jp-font.css", "css/code_block.css", "css/myimage.css"]
+      RSSLink = ""
+      twitterName = "yukara_ikemiya"
+      fbName = ""
+      githubName = "yukara-ikemiya"
+      linkedinName = "yukara-ikemiya-16a6b85a"
+      mediumName = ""
+      logo = ""
+      orgName = "Yukara Ikemiya"
+      orgWebsite = ""
+      orgDescription = "audio software engineer"
+      showSupport = true
+      author = "YUKARA IKEMIYA"
+      authorAvatar = "img/yukara_profile.jpg"
+      authorLocation = "Kanagawa, Japan"
+      authorWebsite = "https://yukara-ikemiya.github.io/arayuru-genjitu-blog/"
+      authorDescription = "audio software engineer"
+      pageNotFoundTitle = "404 - Page not found"
+      singleViewStyle = "casper"
+
+    [[languages.en.menus.main]]
+      name = "Home"
+      url = "/en/"
+      weight = 200
+
+    [[languages.en.menus.main]]
+      name = "Categories"
+      url = "/en/categories/"
+      weight = 99
+
+    [[languages.en.menus.main]]
+      name = "Tags"
+      url = "/en/tags/"
+      weight = 98

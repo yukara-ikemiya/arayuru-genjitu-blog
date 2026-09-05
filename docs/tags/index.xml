@@ -1,137 +1,115 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on あらゆる現実のはなし</title>
-    <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/</link>
-    <description>Recent content in Tags on あらゆる現実のはなし</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ai</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/</link>
-      <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>deep learning</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/deep-learning/</link>
-      <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>music</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/music/</link>
-      <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/music/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>food</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/food/</link>
-      <pubDate>Thu, 21 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/food/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>gadget</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/gadget/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/gadget/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>game</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/game/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/game/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>movie</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/movie/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/movie/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C&#43;&#43;</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/c&#43;&#43;/</link>
-      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/c&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/docker/</link>
-      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>anime</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/anime/</link>
-      <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/anime/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>comic</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/comic/</link>
-      <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/comic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>beer</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/beer/</link>
-      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/beer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>travel</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/travel/</link>
-      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/travel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>misc</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/misc/</link>
-      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/misc/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Tags on あらゆる現実のはなし</title>
+		<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/</link>
+		<description>Recent content in Tags on あらゆる現実のはなし</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Ai</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/</link>
+				<pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Deep Learning</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/deep-learning/</link>
+				<pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/deep-learning/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Music</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/music/</link>
+				<pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/music/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Food</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/food/</link>
+				<pubDate>Thu, 21 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/food/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Gadget</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/gadget/</link>
+				<pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/gadget/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Game</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/game/</link>
+				<pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/game/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Movie</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/movie/</link>
+				<pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/movie/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>C&#43;&#43;</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/c&#43;&#43;/</link>
+				<pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/c&#43;&#43;/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Docker</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/docker/</link>
+				<pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/docker/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Anime</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/anime/</link>
+				<pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/anime/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Comic</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/comic/</link>
+				<pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/comic/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Beer</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/beer/</link>
+				<pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/beer/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Travel</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/travel/</link>
+				<pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/travel/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Misc</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/misc/</link>
+				<pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/misc/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>

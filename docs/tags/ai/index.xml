@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ai on あらゆる現実のはなし</title>
-    <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/</link>
-    <description>Recent content in ai on あらゆる現実のはなし</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Suno AI の作り方 (技術者の観点から)</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231224/</link>
-      <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231224/</guid>
-      <description>日本音響学会 学生・若手フォーラム Advent Calendar 2023 24日目 Suno AI とは、歌詞と曲のスタイル（と曲名）を指定するだけで、自動で歌詞入りの楽曲を作成してくれる生</description>
-    </item>
-    
-    <item>
-      <title>Best Practices for Multi-Node Training on ABCI with PyTorch</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231217/</link>
-      <pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231217/</guid>
-      <description>This article summarizes a simple method for conducting distributed training with ABCI which is the GPU cloud computing service by AIST. The following repository provides a simple example of training codes on ABCI with support for multi-node training.
-https://github.com/yukara-ikemiya/abci-code-sample
-Let&amp;rsquo;s use ABCI for training large-scale models  AI Bridging Cloud Infrastructure (ABCI) is the world&amp;rsquo;s first large-scale Open AI Computing Infrastructure, constructed and operated by National Institute of Advanced Industrial Science and Technology (AIST).</description>
-    </item>
-    
-    <item>
-      <title>お絵描きAIの中では何をしているか？</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</link>
-      <pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</guid>
-      <description>本記事は、一般的なお絵描きAIの仕組みを非エンジニア向けに説明したものです。 これから様々な生成系AIが出てくる中で、技術的な仕組みを直観的に</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Ai on あらゆる現実のはなし</title>
+		<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/</link>
+		<description>Recent content in Ai on あらゆる現実のはなし</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Suno AI の作り方 (技術者の観点から)</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231224/</link>
+				<pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231224/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://qiita.com/advent-calendar/2023/asj-fresh&#34;&gt;日本音響学会 学生・若手フォーラム Advent Calendar 2023&lt;/a&gt; 24日目&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Suno AI とは、歌詞と曲のスタイル（と曲名）を指定するだけで、自動で歌詞入りの楽曲を作成してくれる生成 AI サービスです。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>PyTorch &#43; ABCI によるマルチノード分散学習のベストプラクティス</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231217/</link>
+				<pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20231217/</guid>
+				<description>&lt;p&gt;本記事では、産総研が提供するGPUクラウド計算基盤「ABCI」を用いて分散学習を行うためのシンプルな方法をまとめます。&#xA;以下のレポジトリに、マルチノード学習に対応した ABCI 向け学習コードの最小サンプルを公開しています。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>お絵描きAIの中では何をしているか？</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</link>
+				<pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20220918/</guid>
+				<description>&lt;p&gt;本記事は、一般的なお絵描きAIの仕組みを非エンジニア向けに説明したものです。&#xA;これから様々な生成系AIが出てくる中で、技術的な仕組みを直観的にでも理解しておこう、&#xA;といったことを目的としています。&#xA;より詳しい方は、&lt;a href=&#34;https://github.com/CompVis/stable-diffusion&#34;&gt;Stable Diffusion&lt;/a&gt; の元となっている以下の論文などをご参照ください。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

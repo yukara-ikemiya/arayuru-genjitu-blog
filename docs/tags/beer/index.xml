@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>beer on あらゆる現実のはなし</title>
-    <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/beer/</link>
-    <description>Recent content in beer on あらゆる現実のはなし</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/beer/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>シンガポールの壁</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191212/</link>
-      <pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191212/</guid>
-      <description>本記事は「壁 Advent Calendar 2019」11日目のなにかです。 今年は人工知能に蹂躙されることもなく、非常に健全なカレンダーとなっていて素晴らしいと思います</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Beer on あらゆる現実のはなし</title>
+		<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/beer/</link>
+		<description>Recent content in Beer on あらゆる現実のはなし</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 12 Dec 2019 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/beer/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>シンガポールの壁</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191212/</link>
+				<pubDate>Thu, 12 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191212/</guid>
+				<description>&lt;p&gt;本記事は「&lt;a href=&#34;https://adventar.org/calendars/4483&#34;&gt;壁 Advent Calendar 2019&lt;/a&gt;」11日目のなにかです。&#xA;今年は人工知能に蹂躙されることもなく、非常に健全なカレンダーとなっていて素晴らしいと思います。&lt;/p&gt;&#xA;&lt;p&gt;でも多分 &lt;a href=&#34;https://twitter.com/azaazarashi&#34;&gt;@azaazarashi&lt;/a&gt; が荒らします。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

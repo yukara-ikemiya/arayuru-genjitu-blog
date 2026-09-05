@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>misc on あらゆる現実のはなし</title>
-    <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/misc/</link>
-    <description>Recent content in misc on あらゆる現実のはなし</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Wed, 11 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/misc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ブログのはじまり</title>
-      <link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191211/</link>
-      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191211/</guid>
-      <description>やうしうな技術者もすなるブログといふものを我もしてみむとてするなり。 目的 はるか昔にはてなブログで技術記事みたいなのを書いた時代もありましたが</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Misc on あらゆる現実のはなし</title>
+		<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/misc/</link>
+		<description>Recent content in Misc on あらゆる現実のはなし</description>
+		<generator>Hugo</generator>
+		<language>ja-JP</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 11 Dec 2019 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>ブログのはじまり</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191211/</link>
+				<pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/post/20191211/</guid>
+				<description>&lt;p&gt;やうしうな技術者もすなるブログといふものを我もしてみむとてするなり。&lt;/p&gt;&#xA;&lt;h2 id=&#34;目的&#34;&gt;目的&lt;/h2&gt;&#xA;&lt;p&gt;はるか昔にはてなブログで技術記事みたいなのを書いた時代もありましたが、&#xA;もう駆動していないので、せっかくだからもっと雑多なことを書くための&#xA;新しいブログを立ち上げてみた。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

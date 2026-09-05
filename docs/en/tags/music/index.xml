@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Music on Talks on Every Reality</title>
+		<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/tags/music/</link>
+		<description>Recent content in Music on Talks on Every Reality</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/tags/music/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>How to Build Suno AI: An Engineer&#39;s Perspective</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/post/20231224/</link>
+				<pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/post/20231224/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://qiita.com/advent-calendar/2023/asj-fresh&#34;&gt;Acoustical Society of Japan (ASJ) Student and Young Forum Advent Calendar 2023&lt;/a&gt; Day 24&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Suno AI is a generative AI service that automatically produces full songs with vocals simply by providing lyrics, musical style descriptors, and a track title.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.suno.ai/&#34;&gt;Suno AI&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;While various music generation models have been released recently, Suno AI went especially viral because of its unique lyric-driven interface and the immense entertainment value of generating expressive vocal tracks.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

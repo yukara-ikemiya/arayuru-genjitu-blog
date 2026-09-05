@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Ai on Talks on Every Reality</title>
+		<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/tags/ai/</link>
+		<description>Recent content in Ai on Talks on Every Reality</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>How to Build Suno AI: An Engineer&#39;s Perspective</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/post/20231224/</link>
+				<pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/post/20231224/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://qiita.com/advent-calendar/2023/asj-fresh&#34;&gt;Acoustical Society of Japan (ASJ) Student and Young Forum Advent Calendar 2023&lt;/a&gt; Day 24&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Suno AI is a generative AI service that automatically produces full songs with vocals simply by providing lyrics, musical style descriptors, and a track title.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.suno.ai/&#34;&gt;Suno AI&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;While various music generation models have been released recently, Suno AI went especially viral because of its unique lyric-driven interface and the immense entertainment value of generating expressive vocal tracks.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Best Practices for Multi-Node Training on ABCI with PyTorch</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/post/20231217/</link>
+				<pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/post/20231217/</guid>
+				<description>&lt;p&gt;This article summarizes a simple method for conducting distributed training with ABCI, the GPU cloud computing service operated by AIST.&#xA;The following repository provides a minimal working example of training code on ABCI with support for multi-node training:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/yukara-ikemiya/abci-code-sample&#34;&gt;https://github.com/yukara-ikemiya/abci-code-sample&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;using-abci-for-training-large-scale-models&#34;&gt;Using ABCI for Training Large-Scale Models&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;AI Bridging Cloud Infrastructure (ABCI) is the world&amp;rsquo;s first large-scale Open AI Computing Infrastructure, constructed and operated by National Institute of Advanced Industrial Science and Technology (AIST).&#xA;(&lt;a href=&#34;https://abci.ai/en/about_abci/&#34;&gt;https://abci.ai/en/about_abci/&lt;/a&gt;)&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>What Goes On Inside Image Generation AI?</title>
+				<link>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/post/20220918/</link>
+				<pubDate>Sun, 18 Sep 2022 00:00:00 +0000</pubDate>
+				<guid>https://yukara-ikemiya.github.io/arayuru-genjitu-blog/en/post/20220918/</guid>
+				<description>&lt;p&gt;This article explains the fundamental mechanisms behind image generation AI (such as text-to-image models) for non-engineers.&#xA;As generative AI rapidly evolves, the goal is to provide an intuitive understanding of the underlying principles.&#xA;For a more technical deep-dive, please refer to the foundational paper behind &lt;a href=&#34;https://github.com/CompVis/stable-diffusion&#34;&gt;Stable Diffusion&lt;/a&gt;:&lt;/p&gt;&#xA;&lt;p&gt;(arXiv link) &lt;a href=&#34;https://arxiv.org/abs/2112.10752&#34;&gt;High-Resolution Image Synthesis with Latent Diffusion Models&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;images-as-digital-data&#34;&gt;Images as Digital Data&lt;/h1&gt;&#xA;&lt;p&gt;First, let&amp;rsquo;s look at how computers represent images as data.&lt;/p&gt;&#xA;&lt;p&gt;An image is an aggregation of pixels. A 1000 x 1000 image consists of 1,000,000 pixels.&#xA;In standard digital imagery, each pixel is stored as an 8-bit integer (a number from 0 to 255), meaning any digital image is simply a collection of numerical values:&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
