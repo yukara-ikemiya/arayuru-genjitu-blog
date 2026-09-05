@@ -1,1 +1,1 @@
-arayuru-genjitu
+Blog link: https://yukara-ikemiya.github.io/arayuru-genjitu-blog/
